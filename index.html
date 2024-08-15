@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>uXs</title>
+	<link rel="stylesheet" type="text/css" href="1.css">
+</head>
+<body>
+	<nav>
+	<div class="navigation" >
+	<div class="home"><a href="file:///C:/frontend/login/login.html">home</a></div>
+	<div class="aboutus"> <a href="https://kseeb.karnataka.gov.in/karsslcexam1/">about us</a></div>
+</div></nav>
+	<h1><center>we start here!</center></h1>
+		<form id="form">
+
+<div class="login">
+	<h1><center>LOG IN</center></h1>
+<center><label>email</label>
+<input type="text" id="name" name="email" >
+<label for="password">pasword </label>
+<input type="password" id="password" name="password" required>
+</center>
+<div class="btn">
+<button type="submit" onclick="openpopup()">submit</button>
+</div>	
+<div class="popup" id="popup">
+<h2>thank you!</h2>
+<p>your details has been sucessfully uploaded</p>
+<button type="submit" onclick="closepopup()">OK</button>
+</div>
+</div> 
+</form>
+<script >
+	let popup = document.getElementById("popup");
+	function openpopup(){
+popup.classList.add("open-popup");
+	}
+	function closepopup(){
+popup.classList.remove("open-popup");
+	}
+</script>
+</body>
+</html>
